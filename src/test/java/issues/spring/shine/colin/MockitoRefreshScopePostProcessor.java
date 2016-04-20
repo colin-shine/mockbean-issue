@@ -36,7 +36,7 @@ public class MockitoRefreshScopePostProcessor implements BeanFactoryPostProcesso
     }
 
     private List<String> getMockedBeans(ConfigurableListableBeanFactory beanFactory) {
-        List<String> result = new ArrayList<String>();
+        List<String> result = new ArrayList<>();
 
         for (Class mockedType : mockedTypes) {
             String[] mockedBeans = beanFactory.getBeanNamesForType(mockedType);
